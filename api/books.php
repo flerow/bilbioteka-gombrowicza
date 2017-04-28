@@ -27,11 +27,8 @@ function fixKeysAndSendJsonArr($booksArr) {
     }
     echo json_encode($res);
 }
+include_once '../config.php';
 
-$host = 'localhost';
-$db = 'workshops_3';
-$user = 'root';
-$pass = 'coderslab';
 try {
     $conn = new PDO("mysql:host=$host;dbname=$db;charset=UTF8", $user, $pass);
     // set the PDO error mode to exception
