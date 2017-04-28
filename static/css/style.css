@@ -1,0 +1,14 @@
+h1{
+    color:#294550;
+    font-style:italic;
+    font-weight: bold;
+}
+h2:hover{
+    cursor:pointer;
+}
+.desc{
+    width:400px;
+    border:1px solid palegreen;
+    padding:10px;
+    margin:5px;
+}
