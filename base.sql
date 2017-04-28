@@ -24,11 +24,11 @@ DROP TABLE IF EXISTS `books`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `books` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  `author` varchar(255) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
+  `author` varchar(255) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
   `description` text CHARACTER SET utf8 COLLATE utf8_polish_ci,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `books` (
 
 LOCK TABLES `books` WRITE;
 /*!40000 ALTER TABLE `books` DISABLE KEYS */;
-INSERT INTO `books` VALUES (3,'Bakakaj','Witold Gombrowicz','Tom Bakakaj i inne opowiadania zawiera wczesne, a już doskonałe utwory pisarza. Ich lektura daje pojęcie o literackim mistrzostwie i osobliwym zamyśle obserwacyjnym Gombrowicza, ułatwia poznawanie późniejszych jego książek. '),(4,'Bestiarium','Tadeusz Rozycki','Elementy rzeczywistości splatają się z wizjami, tajemnice rodzinne przeobrażają się w groteskę i zarazem prywatną mitologię. Przeżywamy wielką przygodę wyobraźni w świecie stworzonym przez poetę, który brawurowo operuje słowem i - podobnie jak w znakomitych Dwunastu stacjach - bawi się językiem, pod kostiumem komizmu ukrywającym prawdy zaskakująco istotne. '),(5,'Kosmos','Witold Gombrowicz',' Późne, dojrzałe dzieło wielkiego pisarza stanowi kwintesencję jego poglądów na życie i sztukę. Dowodem na uniwersalność i doniosłość przesłania powieści jest uhonorowanie jej międzynarodową nagrodą Prix Formentor, najwyższym europejskim wyróżnieniem po Literackiej Nagrodzie Nobla. '),(8,'Pornografia','Witold Gombrowicz','Pornografia jest dziełem wielkim. Żadna lektura ani żadna interpretacja nie jest w stanie wyczerpać jej sensów, stanowi tylko formę zbliżenia, formę wydobycia tych znaczeń, ujęć, symboli, które wydają się najdonoślejsze. Wielkie dzieło przerasta bowiem to, co jest w stanie o nim powiedzieć czytelnik i interpretator; gdyby tego nie czyniło, nie byłoby wielkim dziełem. A Gombrowiczowska Pornografia jest nim niewątpliwie. (Z posłowia Michała Głowińskiego) '),(11,'Ferdydurke','Witold Gombrowicz',' Wyjątkowe, jubileuszowe wydanie z okazji 75-lecia jednej z najważniejszych powieści polskiej XX wieku. '),(17,'Trans-Atlantyk','Witold Gombrowicz','Jedyny w swoim rodzaju utwór-wyzwanie, utwór-prowokacja, kapitalna rozprawa Gombrowicza z polskością, z podtrzymywanymi przez tradycję stereotypami narodowymi. Genialny humor i cudowny język, zadziwiające wykorzystanie przez pisarza form gawędy szlacheckiej, nie milknące pytania, które w każdym pokoleniu powinniśmy sobie zadawać'),(18,'','','dd...');
+INSERT INTO `books` VALUES (3,'Bakakaj','Witold Gombrowicz','Tom Bakakaj i inne opowiadania zawiera wczesne, a już doskonałe utwory pisarza. Ich lektura daje pojęcie o literackim mistrzostwie i osobliwym zamyśle obserwacyjnym Gombrowicza, ułatwia poznawanie późniejszych jego książek. '),(4,'Bestiarium','Tadeusz Rozycki','Elementy rzeczywistości splatają się z wizjami, tajemnice rodzinne przeobrażają się w groteskę i zarazem prywatną mitologię. Przeżywamy wielką przygodę wyobraźni w świecie stworzonym przez poetę, który brawurowo operuje słowem i - podobnie jak w znakomitych Dwunastu stacjach - bawi się językiem, pod kostiumem komizmu ukrywającym prawdy zaskakująco istotne. '),(5,'Kosmos','Witold Gombrowicz',' Późne, dojrzałe dzieło wielkiego pisarza stanowi kwintesencję jego poglądów na życie i sztukę. Dowodem na uniwersalność i doniosłość przesłania powieści jest uhonorowanie jej międzynarodową nagrodą Prix Formentor, najwyższym europejskim wyróżnieniem po Literackiej Nagrodzie Nobla. '),(8,'Pornografia','Witold Gombrowicz','Pornografia jest dziełem wielkim. Żadna lektura ani żadna interpretacja nie jest w stanie wyczerpać jej sensów, stanowi tylko formę zbliżenia, formę wydobycia tych znaczeń, ujęć, symboli, które wydają się najdonoślejsze. Wielkie dzieło przerasta bowiem to, co jest w stanie o nim powiedzieć czytelnik i interpretator; gdyby tego nie czyniło, nie byłoby wielkim dziełem. A Gombrowiczowska Pornografia jest nim niewątpliwie. (Z posłowia Michała Głowińskiego) '),(11,'Ferdydurke','Witold Gombrowicz',' Wyjątkowe, jubileuszowe wydanie z okazji 75-lecia jednej z najważniejszych powieści polskiej XX wieku. '),(17,'Trans-Atlantyk','Witold Gombrowicz','Jedyny w swoim rodzaju utwór-wyzwanie, utwór-prowokacja, kapitalna rozprawa Gombrowicza z polskością, z podtrzymywanymi przez tradycję stereotypami narodowymi. Genialny humor i cudowny język, zadziwiające wykorzystanie przez pisarza form gawędy szlacheckiej, nie milknące pytania, które w każdym pokoleniu powinniśmy sobie zadawać');
 /*!40000 ALTER TABLE `books` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-28 11:56:39
+-- Dump completed on 2017-04-28 12:11:35
